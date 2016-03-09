@@ -1,0 +1,46 @@
+// =====================================
+//
+//   Base
+//   -> Breakpoints, mixins
+//
+// =====================================
+
+
+// ----- BREAKPOINT (use em) ---- /
+
+
+@mixin breakpoint-min($point) 
+{
+    @if $point == x-large {
+        @media (min-width: 1200px) { @content; } // 85.714em
+    }
+
+    @else if $point == large {
+        @media (min-width: 992px) { @content; } // 70.857em
+    }
+    
+    @else if $point == medium {
+        @media (min-width: 640px) { @content; } // 54.857em
+    }
+    @else if $point == small {
+        @media (min-width: 360px)  { @content; } // To define
+    }
+}
+
+@mixin breakpoint-max($point) 
+{
+    @if $point == x-large {
+        @media (max-width: 1199px) { @content; } // 85.714em
+    }
+    @else if $point == large {
+        @media (max-width: 991px) { @content; } // 70.857em
+    }
+    @else if $point == medium {
+        @media (max-width: 640px) { @content; } // 54.857em
+    }
+    @else if $point == small {
+        @media (max-width: 359px)  { @content; } // To define
+    }
+}
+
+ 

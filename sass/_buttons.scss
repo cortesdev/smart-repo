@@ -1,0 +1,42 @@
+// =====================================
+//
+//   Buttons
+//   -> CTO
+//
+// =====================================
+ 
+button 
+{
+    opacity: 1;
+    height: 33px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    background: $orange;
+    white-space: nowrap;
+    padding: 6px 12px;
+    border-radius: 5px;
+    line-height: 18px;
+    vertical-align: middle;
+    display: inline-block;
+    border: 1px solid transparent;    
+    transition: all 0.5s ease 0s;
+
+    &:hover 
+    {
+        opacity: 0.75;
+    }  
+
+    &.cto 
+    {
+        background: $blue;
+        width: 100%;
+        padding:12px 18px 13px 18px;
+        height: 59px;
+        display: inline-block;
+        outline: none;
+    }
+}
+
