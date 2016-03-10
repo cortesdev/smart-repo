@@ -3,11 +3,11 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 		watch: {
 			sass: {
-				files: ['sass/**/*.{scss,sass}'],
+				files: ['sass/**/*.{scss,sass}','sass/_partials/**/*.{scss,sass}'],
 				tasks: ['sass:dist']
 			},
 			livereload: {
-				files: ['*.html', 'css/*.css','images/**/*.{png,jpg,jpeg,gif,webp,svg}'],
+				files: ['*.html', '*.php', 'js/**/*.{js,json}', 'css/*.css','images/**/*.{png,jpg,jpeg,gif,webp,svg}'],
 				options: {
 					livereload: true
 				}
